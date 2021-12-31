@@ -1,7 +1,14 @@
 # Coding Practice: Two Number Summation
 
-This code is meant for me to practice coding interview questions with Python.
-I am supposed to write a function that takes in a non-empty
+This project is meant for me to practice coding interview questions with Python.
+In this project, I am presented with the following task: write a function 
+that takes in a non-empty of distinct integers and an integer representing a 
+target sum. If any two numbers in the input array sum up to the target sum, 
+the function should return them in the array (in any order). If no two 
+numbers sum up to the target sum--the funciton should return an empty array. 
+You cannot add a single integer to itself in order to obtain the target 
+sum--assume that there will be at most one pair of numbers that will sum to 
+the target number.
 
 ## Running The Project
 **NOTE: Your IDE may configure the project implicitly as a module. BE SURE TO 
