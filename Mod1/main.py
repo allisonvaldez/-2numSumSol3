@@ -1,16 +1,34 @@
-# This is a sample Python script.
+# time: O(n log(n)) | space: O(n)
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+def two_num_sum(array, targetSum):
+    # start by sorting the array
+    array.sort()
+
+    # initialize the left and right side of the array
+    left = 0
+    right = len(array) - 1
+
+    """
+    set the condition for the program to run while the leftside of array is
+    less then the rightside
+    """
+    while left < right:
+        # initialize a value that is the sum of the left and right index
+        currentSum = array[left] + array[right]
+
+        """
+        create an if statement that satisfys the condition when:
+        1. condition that meets the criteria
+        2. when currentSum is less than the targetSum move to left in index by +=1
+        3. when currentSum is more than targetSum move to right in index by -=1
+        """
+        if currentSum == targetSum:
+            return [array[left], array[right]]
+        elif currentSum < targetSum:
+            left += 1
+        elif currentSum > targetSum:
+            right -= 1
+        return []
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(two_num_sum([4, 6, 1, -3], 3))

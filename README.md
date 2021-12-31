@@ -8,7 +8,7 @@ I am supposed to write a function that takes in a non-empty
 RUN STEP 4 BELOW BEFORE SUBMITTING LABS** 
 
 1. Download and install Python on your computer
-2. Navigate to the [TwoNumberSum.Mod1]() directory
+2. Navigate to the [TwoNumberSumSol3.Mod1]() directory
 3. Run the program as a module: `python -m Mod1 -h`. This will print the help 
    message.
 4. Run the program as a module (with real inputs): `python -m Mod1 <random 
